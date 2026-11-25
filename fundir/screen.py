@@ -42,7 +42,7 @@ class SleepGif(QLabel):
         else:
             self.idle_counter = 0
 
-        if self.idle_counter >= 3 and not self.isVisible():
+        if self.idle_counter >= 120 and not self.isVisible():
             self.showFullScreen()
             
             screen = QGuiApplication.primaryScreen()
